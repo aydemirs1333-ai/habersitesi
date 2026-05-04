@@ -1,12 +1,13 @@
 const STORAGE_KEY = "vizyoner-editorial-feed-v6";
+const ASSET_VERSION = "7";
 
 const covers = {
-    earthquakeMain: "assets/kapak-deprem-ana.jpg",
-    earthquakeMap: "assets/kapak-deprem-harita.jpg",
-    earthquakeCity: "assets/kapak-deprem-sehir.jpg",
-    towers: "assets/kapak-ekonomi.jpg",
-    stadium: "assets/kapak-spor.jpg",
-    studio: "assets/kapak-editor.jpg"
+    earthquakeMain: `kapak-deprem-ana.jpg?v=${ASSET_VERSION}`,
+    earthquakeMap: `kapak-deprem-harita.jpg?v=${ASSET_VERSION}`,
+    earthquakeCity: `kapak-deprem-sehir.jpg?v=${ASSET_VERSION}`,
+    towers: `kapak-ekonomi.jpg?v=${ASSET_VERSION}`,
+    stadium: `kapak-spor.jpg?v=${ASSET_VERSION}`,
+    studio: `kapak-editor.jpg?v=${ASSET_VERSION}`
 };
 
 const articles = [
@@ -22,6 +23,7 @@ const articles = [
         image: covers.earthquakeMain,
         detailImage: covers.earthquakeMain,
         sourceUrl: "#",
+        imagePosition: "50% 54%",
         body: [
             "Deprem basliklari gundemin ritmini belirleyen en hassas alanlardan biri oldugu icin editor masasi, resmi kurum akislarini tek pencerede toplamayi surduruyor.",
             "Bu dosyada amac, yalnizca ilk sinyali vermek degil; hangi sehirlerin etkilendigini, hangi aciklamalarin geldigini ve kamuoyu icin bir sonraki anlamli guncellemenin ne olacagini netlestirmek.",
@@ -45,6 +47,7 @@ const articles = [
         image: covers.earthquakeMap,
         detailImage: covers.earthquakeMap,
         sourceUrl: "#",
+        imagePosition: "50% 48%",
         body: [
             "Bolgesel sarsinti haberlerinde ilk saatler icinde dogru veri toplamak, basligin kendisinden daha kritik hale gelebiliyor.",
             "Samsun dosyasi, tek seferde hem resmi kaynaklara hem de editor ozetiyle duzenlenmis bir akisa erisim sagliyor.",
@@ -68,6 +71,7 @@ const articles = [
         image: covers.earthquakeCity,
         detailImage: covers.earthquakeCity,
         sourceUrl: "#",
+        imagePosition: "50% 56%",
         body: [
             "Yerel deprem haberlerinde en zor kisim, bilgi kalabaligini panik yerine netlige donusturebilmek.",
             "Mugla dosyasi, kart ustu ozet ve detay sayfasi katmanlariyla ayni haberin iki farkli okuma temposunu destekliyor.",
@@ -91,6 +95,7 @@ const articles = [
         image: covers.towers,
         detailImage: covers.towers,
         sourceUrl: "#",
+        imagePosition: "50% 52%",
         body: [
             "Ekonomi haberlerinin etkisi cogu zaman basligin kendisinden sonra ortaya cikar; beklenti, veri ve yonlendirme arasindaki baglar okur icin net gosterilmelidir.",
             "Bu yuzden ekonomi kartlarinda daha serin gorseller, daha sakin tonlar ve kisa ama yogun ozetler kullaniyoruz.",
@@ -114,6 +119,7 @@ const articles = [
         image: covers.stadium,
         detailImage: covers.stadium,
         sourceUrl: "#",
+        imagePosition: "50% 62%",
         body: [
             "Spor sayfasinda hedef sadece skor vermek degil; kulubun ekonomik pozisyonunu ve taraftar deneyimini ayni hikayeye baglamak.",
             "Referans gorseldeki kart ritmini koruyarak daha hafif ama canli bir ton ekledik.",
@@ -137,6 +143,7 @@ const articles = [
         image: covers.studio,
         detailImage: covers.studio,
         sourceUrl: "#",
+        imagePosition: "50% 52%",
         body: [
             "Bu calismada en buyuk degisim, ilk gorseldeki premium haber odasi hissini daha duzgun bir grid ve tipografi sistemiyle yeniden kurmak oldu.",
             "Ust bolumde buyuk kahraman alan, sagda briefing paneli, altta arama ve kategori filtreleri, sonrasinda da birbirine yaslanan kart akisi tasarlandi.",
@@ -191,7 +198,7 @@ function renderHomePage() {
     let activeCategory = "all";
 
     hero.innerHTML = `
-        <div class="hero-spotlight__media" style="background-image:url('${feature.detailImage}')"></div>
+        <div class="hero-spotlight__media" style="background-image:url('${feature.detailImage}');background-position:${feature.imagePosition || "50% 50%"}"></div>
         <div class="hero-spotlight__content">
             <div class="badge-row">
                 <span class="badge badge--accent">${feature.category}</span>
@@ -227,7 +234,7 @@ function renderHomePage() {
 
     const secondary = data[2];
     sideStory.innerHTML = `
-        <div class="side-story__image" style="background-image:url('${secondary.image}')"></div>
+        <div class="side-story__image" style="background-image:url('${secondary.image}');background-position:${secondary.imagePosition || "50% 50%"}"></div>
         <div class="side-story__body">
             <p class="section-tag">Gunun Konusu</p>
             <h3>Gunun dunya dosyasi</h3>
@@ -271,7 +278,10 @@ function renderHomePage() {
 
         list.forEach((article) => {
             const node = template.content.firstElementChild.cloneNode(true);
-            node.querySelector(".news-card__image").style.backgroundImage = `url('${article.image}')`;
+            const image = node.querySelector(".news-card__photo");
+            image.src = article.image;
+            image.alt = article.title;
+            image.style.objectPosition = article.imagePosition || "50% 50%";
             node.querySelector(".news-card__pill").textContent = article.category;
             node.querySelector(".news-card__source").textContent = article.source;
             node.querySelector(".news-card__title").textContent = article.title;
@@ -328,7 +338,9 @@ function renderDetailPage() {
         <span>${article.publishedLabel}</span>
     `;
     document.getElementById("detail-cover").style.backgroundImage = `url('${article.detailImage}')`;
+    document.getElementById("detail-cover").style.backgroundPosition = article.imagePosition || "50% 50%";
     document.getElementById("detail-hero-visual").style.backgroundImage = `url('${article.image}')`;
+    document.getElementById("detail-hero-visual").style.backgroundPosition = article.imagePosition || "50% 50%";
     document.getElementById("detail-body").innerHTML = article.body.map((paragraph) => `<p>${paragraph}</p>`).join("");
     document.getElementById("watch-list").innerHTML = article.watch.map((item) => `<li>${item}</li>`).join("");
     document.getElementById("source-link").href = article.sourceUrl || createDetailUrl(article);
