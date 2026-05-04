@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5A2D1E"/>
+      <stop offset="45%" stop-color="#1B2234"/>
+      <stop offset="100%" stop-color="#09111F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#FFB98A" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#FFB98A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A1822"/>
+      <stop offset="100%" stop-color="#290811"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)" opacity=".7"/>
+
+  <g opacity=".25" stroke="#DFCBB5" stroke-width="6">
+    <path d="M140 120h1320"/>
+    <path d="M160 212h1280"/>
+  </g>
+
+  <g>
+    <path d="M85 188c0-48 38-86 86-86h178c46 0 84 38 84 86v248H85V188Z" fill="#3A241E"/>
+    <path d="M445 188c0-48 38-86 86-86h178c46 0 84 38 84 86v248H445V188Z" fill="#3D2821"/>
+    <path d="M805 188c0-48 38-86 86-86h178c46 0 84 38 84 86v248H805V188Z" fill="#3D2821"/>
+    <path d="M1165 188c0-48 38-86 86-86h178c46 0 84 38 84 86v248h-348V188Z" fill="#3A241E"/>
+  </g>
+
+  <g opacity=".8">
+    <path d="M112 400h1376v540H112z" fill="url(#floor)"/>
+    <path d="M134 430h1332" stroke="#D48C70" stroke-opacity=".4" stroke-width="3"/>
+    <path d="M154 474h1292" stroke="#D48C70" stroke-opacity=".22" stroke-width="2"/>
+  </g>
+
+  <g opacity=".9">
+    <path d="M182 502c183-133 1053-133 1236 0v83c-183-121-1053-121-1236 0v-83Z" fill="#B57A5D"/>
+    <path d="M216 583c168-107 1000-107 1168 0v72c-168-97-1000-97-1168 0v-72Z" fill="#8C573F"/>
+    <path d="M260 652c148-81 912-81 1060 0v52c-148-73-912-73-1060 0v-52Z" fill="#633728"/>
+  </g>
+
+  <g opacity=".95">
+    <rect x="662" y="514" width="276" height="152" rx="14" fill="#2B313E"/>
+    <rect x="732" y="468" width="138" height="34" rx="10" fill="#D2C4B1"/>
+    <rect x="712" y="676" width="176" height="18" rx="9" fill="#D0A071"/>
+  </g>
+
+  <g fill="#F4D8B8" opacity=".85">
+    <circle cx="306" cy="606" r="5"/><circle cx="340" cy="594" r="5"/><circle cx="380" cy="606" r="5"/>
+    <circle cx="454" cy="575" r="5"/><circle cx="492" cy="564" r="5"/><circle cx="528" cy="575" r="5"/>
+    <circle cx="1110" cy="606" r="5"/><circle cx="1144" cy="594" r="5"/><circle cx="1180" cy="606" r="5"/>
+    <circle cx="976" cy="575" r="5"/><circle cx="1012" cy="564" r="5"/><circle cx="1048" cy="575" r="5"/>
+  </g>
+
+  <rect x="94" y="84" width="240" height="58" rx="29" fill="#EAA476" fill-opacity=".18" stroke="#F3C19A" stroke-opacity=".45"/>
+  <text x="136" y="122" fill="#FFF6EF" font-size="30" font-family="Arial, sans-serif" font-weight="700">DUNYA DOSYASI</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B2330"/>
+      <stop offset="50%" stop-color="#10192A"/>
+      <stop offset="100%" stop-color="#08111D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="18%" r="42%">
+      <stop offset="0%" stop-color="#FFCB8F" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#FFCB8F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g opacity=".16" stroke="#DCEEFF" stroke-width="2">
+    <path d="M0 210H1600"/><path d="M0 300H1600"/><path d="M0 390H1600"/>
+    <path d="M260 0V1000"/><path d="M640 0V1000"/><path d="M980 0V1000"/><path d="M1320 0V1000"/>
+  </g>
+
+  <g opacity=".94" fill="#162334">
+    <path d="M120 836V574L230 506V836H120Z"/>
+    <path d="M264 836V420L418 340V836H264Z"/>
+    <path d="M458 836V530L566 472V836H458Z"/>
+    <path d="M604 836V372L760 286V836H604Z"/>
+    <path d="M810 836V498L924 438V836H810Z"/>
+    <path d="M964 836V336L1128 244V836H964Z"/>
+    <path d="M1178 836V466L1294 406V836H1178Z"/>
+    <path d="M1334 836V562L1450 494V836H1334Z"/>
+  </g>
+
+  <g opacity=".82" fill="#84DDF3">
+    <rect x="302" y="382" width="18" height="18"/><rect x="334" y="382" width="18" height="18"/><rect x="366" y="382" width="18" height="18"/>
+    <rect x="648" y="330" width="18" height="18"/><rect x="680" y="330" width="18" height="18"/><rect x="712" y="330" width="18" height="18"/>
+    <rect x="1004" y="286" width="18" height="18"/><rect x="1036" y="286" width="18" height="18"/><rect x="1068" y="286" width="18" height="18"/>
+  </g>
+
+  <path d="M124 738C234 714 314 658 404 596C486 540 582 542 680 598C760 644 838 698 936 694C1042 690 1128 616 1214 558C1304 496 1370 486 1474 520" stroke="#FFB782" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M124 778C234 754 314 698 404 636C486 580 582 582 680 638C760 684 838 738 936 734C1042 730 1128 656 1214 598C1304 536 1370 526 1474 560" stroke="#FFB782" stroke-opacity=".38" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g stroke="#74E7FF" stroke-width="4" opacity=".65">
+    <circle cx="1092" cy="530" r="42"/>
+    <circle cx="1092" cy="530" r="82"/>
+  </g>
+
+  <rect x="92" y="84" width="254" height="58" rx="29" fill="#FFB782" fill-opacity=".14" stroke="#FFD8B6" stroke-opacity=".42"/>
+  <text x="130" y="122" fill="#FFF6ED" font-size="30" font-family="Arial, sans-serif" font-weight="700">SEHIR ETKISI</text>
+</svg>

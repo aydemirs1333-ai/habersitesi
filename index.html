@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09111f">
+    <title>Vizyoner | Guncel Gundem Masasi</title>
+    <meta name="description" content="Vizyoner, gundemi editor secimi yerlesim, briefing panelleri ve filtrelenebilir kart yapisiyla sunan modern haber deneyimidir.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-shell">
+    <div class="page-glow"></div>
+
+    <header class="top-strip">
+        <div class="container top-strip__inner">
+            <p id="live-marquee" class="live-marquee">Gundem akisi yukleniyor...</p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <div class="container site-nav__inner">
+            <div>
+                <p class="eyebrow">Editorial Masa</p>
+                <a href="index.html" class="brand">Vizyoner</a>
+            </div>
+
+            <div class="site-nav__links">
+                <a class="is-active" href="index.html">Ana Sayfa</a>
+                <a href="#news-grid">Gundem</a>
+                <a href="#control-panel">Editor Masasi</a>
+                <a class="pill-link" href="hakkimizda.html">Hakkimizda</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-main">
+        <section class="hero-layout">
+            <article class="hero-spotlight" id="hero-feature"></article>
+
+            <aside class="sidebar-column">
+                <section class="glass-panel briefing-panel">
+                    <p class="section-tag">Gunluk Brifing</p>
+                    <h2>Bugunun en kritik basliklari</h2>
+                    <p class="panel-copy">Editor masasinin onceliklendirdigi haberleri, hizli okunacak bir sirayla toparliyoruz.</p>
+                    <div id="briefing-list" class="briefing-list"></div>
+                </section>
+
+                <section class="glass-panel side-story" id="side-story"></section>
+
+                <section class="glass-panel note-panel">
+                    <p class="section-tag">Editor Notu</p>
+                    <h3>Gundemi sadece hizli degil, anlasilir hale getiriyoruz.</h3>
+                    <p>Vizyoner; manset, etkisi ve izlenmesi gereken bir sonraki adimi ayni ekranda toplar.</p>
+                    <div class="mini-stats">
+                        <div><strong>24/7</strong><span>Canli izleme</span></div>
+                        <div><strong>3</strong><span>Okuma katmani</span></div>
+                        <div><strong>Net</strong><span>Yalin akis</span></div>
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section class="control-panel glass-panel" id="control-panel">
+            <div class="control-panel__top">
+                <div>
+                    <p class="section-tag">Uygulama Paneli</p>
+                    <h2>Haberleri ara ve filtrele</h2>
+                </div>
+
+                <label class="search-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M10.5 4a6.5 6.5 0 1 1 0 13a6.5 6.5 0 0 1 0-13Zm0 1.8a4.7 4.7 0 1 0 0 9.4a4.7 4.7 0 0 0 0-9.4Zm7.66 10.39 2.84 2.84-1.27 1.27-2.84-2.84 1.27-1.27Z"></path>
+                    </svg>
+                    <input id="search-input" type="search" placeholder="Baslik, konu veya kategori ara...">
+                </label>
+            </div>
+
+            <div class="control-panel__bottom">
+                <div id="filter-group" class="filter-group"></div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <strong id="stat-total">0</strong>
+                        <span>Toplam haber</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong id="stat-visible">0</strong>
+                        <span>Listelenen haber</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong id="stat-category">0</strong>
+                        <span>Kategori</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong id="stat-date">4 Mayis 2026</strong>
+                        <span>Guncel dosya</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-grid" class="news-grid"></section>
+    </main>
+
+    <template id="news-card-template">
+        <article class="news-card">
+            <div class="news-card__image">
+                <span class="news-card__pill"></span>
+            </div>
+            <div class="news-card__content">
+                <p class="news-card__source"></p>
+                <h3 class="news-card__title"></h3>
+                <p class="news-card__summary"></p>
+                <div class="news-card__footer">
+                    <div class="news-card__meta">
+                        <small class="news-card__age"></small>
+                        <small class="news-card__date"></small>
+                    </div>
+                    <a class="news-card__link" href="#">Detay ac</a>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="haberler.js"></script>
+</body>
+</html>

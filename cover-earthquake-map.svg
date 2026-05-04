@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2235"/>
+      <stop offset="60%" stop-color="#0A1320"/>
+      <stop offset="100%" stop-color="#08111D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="22%" r="42%">
+      <stop offset="0%" stop-color="#74E7FF" stop-opacity=".86"/>
+      <stop offset="100%" stop-color="#74E7FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g opacity=".14" stroke="#DDF2FF" stroke-width="2">
+    <path d="M0 180H1600"/><path d="M0 280H1600"/><path d="M0 380H1600"/><path d="M0 480H1600"/><path d="M0 580H1600"/>
+    <path d="M180 0V1000"/><path d="M420 0V1000"/><path d="M720 0V1000"/><path d="M1040 0V1000"/><path d="M1360 0V1000"/>
+  </g>
+
+  <g opacity=".9">
+    <path d="M222 324L420 234L658 292L824 196L1034 250L1190 184L1380 256L1268 474L1116 610L944 660L734 642L546 706L364 616L238 476L222 324Z" fill="#142339" stroke="#5BB8D2" stroke-width="5"/>
+    <path d="M290 372L450 300L640 346L798 268L996 314L1150 266L1302 330" stroke="#A8EFFF" stroke-opacity=".34" stroke-width="3"/>
+    <path d="M286 450L446 378L636 424L794 346L992 392L1148 344L1298 408" stroke="#A8EFFF" stroke-opacity=".22" stroke-width="3"/>
+  </g>
+
+  <g>
+    <circle cx="844" cy="408" r="22" fill="#FFB37C"/>
+    <circle cx="844" cy="408" r="68" stroke="#FFB37C" stroke-opacity=".66" stroke-width="8"/>
+    <circle cx="844" cy="408" r="122" stroke="#FFB37C" stroke-opacity=".26" stroke-width="8"/>
+  </g>
+
+  <g opacity=".9">
+    <path d="M154 792C332 716 492 712 658 756C806 794 918 820 1068 782C1214 744 1338 714 1468 740V902H154V792Z" fill="#0F1727"/>
+    <path d="M310 742C460 654 632 656 784 716C920 770 1080 776 1264 720" stroke="#75E2FF" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <rect x="92" y="84" width="242" height="58" rx="29" fill="#7CE8FF" fill-opacity=".14" stroke="#B6F5FF" stroke-opacity=".42"/>
+  <text x="134" y="122" fill="#F3FEFF" font-size="30" font-family="Arial, sans-serif" font-weight="700">SISMIK HARITA</text>
+</svg>

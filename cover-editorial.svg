@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17253A"/>
+      <stop offset="54%" stop-color="#0C1526"/>
+      <stop offset="100%" stop-color="#08111D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="18%" r="42%">
+      <stop offset="0%" stop-color="#7BE9FF" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#7BE9FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g opacity=".16" stroke="#DDF6FF" stroke-width="2">
+    <path d="M110 190h1380"/><path d="M110 812h1380"/>
+    <path d="M210 120v760"/><path d="M804 120v760"/><path d="M1396 120v760"/>
+  </g>
+
+  <rect x="176" y="216" width="482" height="314" rx="24" fill="#121F32" stroke="#334B68"/>
+  <rect x="204" y="248" width="424" height="178" rx="18" fill="#1D2D46"/>
+  <path d="M234 380c62-88 100-138 168-154 76-18 130 12 178 64 36 38 58 84 108 132H234V380Z" fill="#6CDAF3" fill-opacity=".18"/>
+  <rect x="204" y="444" width="254" height="18" rx="9" fill="#EAF6FF" fill-opacity=".88"/>
+  <rect x="204" y="476" width="346" height="14" rx="7" fill="#91A8C7"/>
+
+  <rect x="720" y="216" width="704" height="514" rx="28" fill="#101B2D" stroke="#355274"/>
+  <rect x="758" y="254" width="284" height="194" rx="20" fill="#192B45"/>
+  <rect x="1070" y="254" width="314" height="194" rx="20" fill="#18283F"/>
+  <rect x="758" y="474" width="626" height="28" rx="14" fill="#E6F4FF" fill-opacity=".86"/>
+  <rect x="758" y="526" width="584" height="18" rx="9" fill="#9AB5D6"/>
+  <rect x="758" y="564" width="460" height="18" rx="9" fill="#9AB5D6" fill-opacity=".82"/>
+  <rect x="758" y="616" width="186" height="54" rx="27" fill="#FFB774"/>
+  <rect x="968" y="616" width="184" height="54" rx="27" fill="#162435" stroke="#3F617E"/>
+
+  <rect x="176" y="576" width="482" height="154" rx="24" fill="#0E1A2A" stroke="#324B68"/>
+  <rect x="212" y="612" width="146" height="80" rx="16" fill="#16283F"/>
+  <rect x="382" y="612" width="236" height="22" rx="11" fill="#E6F4FF" fill-opacity=".82"/>
+  <rect x="382" y="652" width="198" height="14" rx="7" fill="#8CA9CB"/>
+
+  <rect x="94" y="84" width="226" height="58" rx="29" fill="#7BE9FF" fill-opacity=".13" stroke="#B6F6FF" stroke-opacity=".45"/>
+  <text x="136" y="122" fill="#F4FDFF" font-size="30" font-family="Arial, sans-serif" font-weight="700">VIZYONER</text>
+</svg>

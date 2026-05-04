@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09111f">
+    <title>Detay | Vizyoner</title>
+    <meta name="description" content="Vizyoner detay sayfasi, secilen haberi ozet, arka plan ve takip basliklariyla birlikte sunar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-shell">
+    <div class="page-glow"></div>
+
+    <header class="top-strip">
+        <div class="container top-strip__inner">
+            <p class="live-marquee">Dosya acik | manset, baglam ve takip listesi tek ekranda.</p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <div class="container site-nav__inner">
+            <div>
+                <p class="eyebrow">Editorial Masa</p>
+                <a href="index.html" class="brand">Vizyoner</a>
+            </div>
+
+            <div class="site-nav__links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#news-grid">Gundem</a>
+                <a class="is-active" href="detay.html">Detay</a>
+                <a class="pill-link" href="hakkimizda.html">Hakkimizda</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-main">
+        <div class="back-row">
+            <button class="back-button" type="button" onclick="history.length > 1 ? history.back() : window.location.href='index.html'">Geri don</button>
+        </div>
+
+        <section class="detail-hero glass-panel">
+            <div class="detail-hero__copy">
+                <p class="section-tag">Analizli Okuma</p>
+                <h1 id="detail-title">Baslik yukleniyor...</h1>
+                <p id="detail-summary" class="detail-hero__summary">Secilen haberin ozeti ve neden onemli oldugu burada yer alacak.</p>
+                <div id="detail-meta" class="detail-meta"></div>
+            </div>
+            <div class="detail-hero__visual" id="detail-hero-visual"></div>
+        </section>
+
+        <section class="detail-layout">
+            <article class="glass-panel article-panel">
+                <div id="detail-cover" class="article-cover"></div>
+                <div class="article-panel__body">
+                    <h2>Haber Ozet Akisi</h2>
+                    <div id="detail-body" class="article-copy"></div>
+                </div>
+            </article>
+
+            <aside class="sidebar-column">
+                <section class="glass-panel">
+                    <p class="section-tag">Takip Listesi</p>
+                    <h3>Bu dosyada neyi izlemeli?</h3>
+                    <ul id="watch-list" class="watch-list"></ul>
+                </section>
+
+                <section class="glass-panel">
+                    <p class="section-tag">Kaynak</p>
+                    <h3>Bagli aksiyonlar</h3>
+                    <div class="button-row">
+                        <a id="source-link" class="button button--primary" href="index.html">Habere git</a>
+                        <a class="button button--ghost" href="index.html#news-grid">Diger haberler</a>
+                    </div>
+                </section>
+
+                <section class="glass-panel">
+                    <p class="section-tag">Ilgili Basliklar</p>
+                    <div id="related-list" class="related-list"></div>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <script src="haberler.js"></script>
+</body>
+</html>

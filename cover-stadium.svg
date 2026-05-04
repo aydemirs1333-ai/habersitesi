@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#421B17"/>
+      <stop offset="38%" stop-color="#161E31"/>
+      <stop offset="100%" stop-color="#09111F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="52%" cy="20%" r="44%">
+      <stop offset="0%" stop-color="#FFC68A" stop-opacity=".88"/>
+      <stop offset="100%" stop-color="#FFC68A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <ellipse cx="800" cy="774" rx="642" ry="164" fill="#4D0F18"/>
+  <ellipse cx="800" cy="774" rx="496" ry="108" fill="#6E1521"/>
+  <ellipse cx="800" cy="774" rx="288" ry="56" fill="#B88B55"/>
+
+  <g opacity=".92">
+    <path d="M140 640c174-184 1146-184 1320 0" stroke="#D39A72" stroke-width="44" stroke-linecap="round"/>
+    <path d="M204 692c138-142 1054-142 1192 0" stroke="#B26649" stroke-width="38" stroke-linecap="round"/>
+    <path d="M266 742c108-104 960-104 1068 0" stroke="#7D3F2F" stroke-width="32" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#F2D0A4" opacity=".9">
+    <circle cx="402" cy="618" r="6"/><circle cx="430" cy="608" r="6"/><circle cx="458" cy="618" r="6"/>
+    <circle cx="1114" cy="618" r="6"/><circle cx="1142" cy="608" r="6"/><circle cx="1170" cy="618" r="6"/>
+    <circle cx="720" cy="716" r="5"/><circle cx="748" cy="710" r="5"/><circle cx="776" cy="716" r="5"/>
+    <circle cx="828" cy="716" r="5"/><circle cx="856" cy="710" r="5"/><circle cx="884" cy="716" r="5"/>
+  </g>
+
+  <path d="M0 194h1600" stroke="#FFE1BC" stroke-opacity=".18" stroke-width="4"/>
+  <path d="M0 248h1600" stroke="#FFE1BC" stroke-opacity=".12" stroke-width="2"/>
+
+  <rect x="94" y="84" width="210" height="58" rx="29" fill="#FFB57B" fill-opacity=".14" stroke="#FFD1A7" stroke-opacity=".45"/>
+  <text x="140" y="122" fill="#FFF6EC" font-size="30" font-family="Arial, sans-serif" font-weight="700">SPOR</text>
+</svg>

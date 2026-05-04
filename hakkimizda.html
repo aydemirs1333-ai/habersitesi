@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09111f">
+    <title>Hakkimizda | Vizyoner</title>
+    <meta name="description" content="Vizyoner'in editoryal yaklasimi, urun mantigi ve haber deneyimi felsefesi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-shell">
+    <div class="page-glow"></div>
+
+    <header class="top-strip">
+        <div class="container top-strip__inner">
+            <p class="live-marquee">Baglamli gazetecilik | hiz, netlik ve tasarim ayni urunun parcasi.</p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <div class="container site-nav__inner">
+            <div>
+                <p class="eyebrow">Editorial Masa</p>
+                <a href="index.html" class="brand">Vizyoner</a>
+            </div>
+
+            <div class="site-nav__links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#news-grid">Gundem</a>
+                <a href="detay.html">Detay</a>
+                <a class="pill-link is-active" href="hakkimizda.html">Hakkimizda</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-main">
+        <div class="back-row">
+            <button class="back-button" type="button" onclick="history.length > 1 ? history.back() : window.location.href='index.html'">Geri don</button>
+        </div>
+
+        <section class="about-hero glass-panel">
+            <p class="section-tag">Biz Kimiz</p>
+            <h1>Manseti yalniz birakmayan bir haber deneyimi tasarliyoruz.</h1>
+            <p>Vizyoner, sadece ilk bilgiyi gosteren degil; o bilginin etkisini, baglamini ve bir sonraki izlenecek adimi ayni deneyime yerlestiren editor merkezli bir urundur.</p>
+        </section>
+
+        <section class="metrics-grid">
+            <article class="glass-panel metric-card">
+                <strong>24/7</strong>
+                <span>Canli takip ve hizli guncelleme</span>
+            </article>
+            <article class="glass-panel metric-card">
+                <strong>3 Katman</strong>
+                <span>Baslik, baglam ve aksiyon yapisi</span>
+            </article>
+            <article class="glass-panel metric-card">
+                <strong>Tek Ekran</strong>
+                <span>Sade ve odakli haber okuma</span>
+            </article>
+            <article class="glass-panel metric-card">
+                <strong>Netlik</strong>
+                <span>Bilgiyi hiz kadar anlasilir kilma hedefi</span>
+            </article>
+        </section>
+
+        <section class="about-layout">
+            <article class="glass-panel prose-panel">
+                <p class="section-tag">Editor Ilkeleri</p>
+                <h2>Neyi savunuyoruz?</h2>
+                <div class="value-list">
+                    <div>
+                        <h3>Dogrulanmis hiz</h3>
+                        <p>Ilk olmak icin guvenilirlikten odun vermiyoruz; veri, resmi aciklama ve net cikarim ayrimini koruyoruz.</p>
+                    </div>
+                    <div>
+                        <h3>Baglam odakli anlatim</h3>
+                        <p>Basligin neden onemli oldugunu ve kimi nasil etkileyebilecegini daha ilk ekranda gorunur kiliyoruz.</p>
+                    </div>
+                    <div>
+                        <h3>Okunabilir tasarim</h3>
+                        <p>Arayuzu bir dekor olarak degil, okurun dikkatini yoneten bir haber aracisi olarak kurguluyoruz.</p>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="sidebar-column">
+                <section class="glass-panel">
+                    <p class="section-tag">Nasil Calisiyoruz</p>
+                    <ul class="watch-list">
+                        <li>Ilk sinyal geldiginde haber etiketlenir ve akis yapisina alinir.</li>
+                        <li>Ozet, kategori ve takip listesi editoryal hiyerarsiyle olusturulur.</li>
+                        <li>Detay sayfasi, kaynak ve ilgili haber baglantilariyla tamamlanir.</li>
+                        <li>Yeni veri geldikce manset ve kartlar birlikte guncellenir.</li>
+                    </ul>
+                </section>
+
+                <section class="glass-panel">
+                    <p class="section-tag">Geri Don</p>
+                    <div class="button-row">
+                        <a class="button button--primary" href="index.html">Ana sayfayi ac</a>
+                        <a class="button button--ghost" href="index.html#news-grid">Akisa gec</a>
+                    </div>
+                </section>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>

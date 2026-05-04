@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2A1E29"/>
+      <stop offset="55%" stop-color="#0D1626"/>
+      <stop offset="100%" stop-color="#08111D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="18%" r="44%">
+      <stop offset="0%" stop-color="#FFB27E" stop-opacity=".92"/>
+      <stop offset="100%" stop-color="#FFB27E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A273B"/>
+      <stop offset="100%" stop-color="#0A1019"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g opacity=".14" stroke="#C9E7FF" stroke-width="2">
+    <path d="M0 220H1600"/><path d="M0 300H1600"/><path d="M0 380H1600"/>
+    <path d="M220 0V1000"/><path d="M520 0V1000"/><path d="M900 0V1000"/><path d="M1260 0V1000"/>
+  </g>
+
+  <g opacity=".4">
+    <path d="M120 780H1480V902H120z" fill="url(#ground)"/>
+    <path d="M0 862C200 820 344 844 496 782C640 724 760 714 920 744C1090 776 1242 850 1600 822V1000H0V862Z" fill="#101A2A"/>
+  </g>
+
+  <g opacity=".95">
+    <path d="M160 742L256 476L374 642L478 396L576 582L704 328L832 614L960 286L1112 566L1232 430L1370 706L1480 534" stroke="#FFB97F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M160 742L256 476L374 642L478 396L576 582L704 328L832 614L960 286L1112 566L1232 430L1370 706L1480 534" stroke="#FFF3D6" stroke-opacity=".4" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g opacity=".92" fill="#182436">
+    <path d="M142 820V560L210 514V820H142Z"/>
+    <path d="M224 820V490L316 438V820H224Z"/>
+    <path d="M340 820V610L408 566V820H340Z"/>
+    <path d="M458 820V458L556 396V820H458Z"/>
+    <path d="M580 820V544L680 480V820H580Z"/>
+    <path d="M710 820V410L804 356V820H710Z"/>
+    <path d="M834 820V518L918 470V820H834Z"/>
+    <path d="M944 820V384L1060 316V820H944Z"/>
+    <path d="M1088 820V526L1168 486V820H1088Z"/>
+    <path d="M1198 820V450L1294 394V820H1198Z"/>
+    <path d="M1322 820V562L1428 500V820H1322Z"/>
+  </g>
+
+  <g stroke="#7ADFFF" stroke-width="4" opacity=".65">
+    <circle cx="972" cy="306" r="48"/>
+    <circle cx="972" cy="306" r="92"/>
+    <circle cx="972" cy="306" r="138"/>
+  </g>
+
+  <rect x="92" y="84" width="260" height="58" rx="29" fill="#FFB27E" fill-opacity=".15" stroke="#FFD5B6" stroke-opacity=".42"/>
+  <text x="132" y="122" fill="#FFF7EF" font-size="30" font-family="Arial, sans-serif" font-weight="700">DEPREM DOSYASI</text>
+</svg>
